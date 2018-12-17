@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Advent of code day 10</title>
+</head>
+<script src="10.js"></script>
+
+<body>
+    <div id="titleBanner">
+      <h1>Visualisation</h1>
+      <div id="menuBanner">
+        <button onClick="tick_decrement()">-</button>
+        <input id="tickInput" type="number"/>
+        <button onClick="getInput()">Go</button>
+        <button onClick="tick_increment()">+</button>
+        <p>Tick <span id="tickTxt">0</span>
+        <br/>
+        <p>Scale <span id="scaleTxt"></span>
+        <input id="scaleInput" type="text"/>
+        <button onClick="getScale()">Go</button>
+      </div>
+    </div>
+    <div>
+      <canvas id="vizContainer" height=400 width=400 style="border: solid 1px black;"/>
+    </div>
+</body>
+
+</html>
